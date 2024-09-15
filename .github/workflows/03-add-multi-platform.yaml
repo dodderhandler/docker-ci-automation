@@ -31,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          tags: iucovaliov/bretfisher-docker-ci-automation-03:latest,iucovaliov/bretfisher-docker-ci-automation-03:${{ vars.NGINX_VERSION }}
+          tags: arievanduin/docker-ci-automation-03:latest,arievanduin/docker-ci-automation-03:${{ vars.NGINX_VERSION }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 #NEW: (START) ##########################################################
