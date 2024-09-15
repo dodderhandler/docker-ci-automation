@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          tags: dodderhandler/docker-ci-automation-01:latest,dodderhandler/docker-ci-automation:${{ vars.NGINX_VERSION }}
+          tags: dodderhandler/docker-ci-automation-01:latest,dodderhandler/docker-ci-automation-01:${{ vars.NGINX_VERSION }}
