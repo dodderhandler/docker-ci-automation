@@ -179,7 +179,7 @@ jobs:
       - name: Run Trivy for all CVEs (non-blocking)
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ghcr.io/bretfisher/docker-ci-automation:${{ github.run_id }}
+          image-ref: ghcr.io/arievanduin/docker-ci-automation:${{ github.run_id }}
           format: table
           exit-code: 0
 
